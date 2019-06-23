@@ -1,0 +1,43 @@
+h1{
+	text-align:center;
+	width:100%;
+}
+.graphview{
+	background-color:#eee;
+	display:block;
+	height:450px;
+	width:100%;
+}
+#tabs{
+	width:600px;
+}
+#tabs.ui-tabs .ui-tabs-panel{
+	padding:1em 0;
+}
+#legend{
+	background-color:#fff;
+	border:solid 1px #000;
+	display:inline-block;
+	left:590px;
+	list-style:none;
+	padding:10px;
+	position:absolute;
+	top:80px;
+	z-index:1;
+}
+.witness-event{
+	color:#080;
+}
+.famous-witness-event{
+	color:#00f;
+}
+.finalized-event{
+	color:#000;
+}
+.boring-event{
+	color:#666;
+}
+#event-info{
+	display:inline-block;
+}
+.funny{background-color:black;color:black;}

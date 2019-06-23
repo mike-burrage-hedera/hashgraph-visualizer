@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hashgraph consensus visualizer</title>
+		<meta charset="utf-8">
+
+		<link href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.min.css" rel="stylesheet" type="text/css">
+		<link href="css/hashgraph-visualizer.css" rel="stylesheet" type="text/css">
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script src="js/cytoscape.umd.js"></script>
+		<script src="js/hashgraph-visualizer.js"></script>
+	</head>
+	<body>
+		<h1>Hashgraph consensus visualizer</h1>
+		<form onsubmit="event.preventDefault(); return false;">
+			<select id="set-node-count-select">
+			</select>
+			<button id="set-node-count-button">reset</button>
+			|
+			<button id="add-record-button">submit record to </button>
+			<select class="node-select" id="add-record-to-select">
+			</select>
+			|
+			<select class="node-select" id="sync-from-select">
+			</select>
+			<button id="sync-button">sync to:</button>
+			<select class="node-select" id="sync-to-select">
+			</select>
+		</form>
+		<ul id="legend">
+			<li class="boring-event">Unfinalized non-witness</li>
+			<li class="finalized-event">Finalized non-witness</li>
+			<li class="witness-event">Witness</li>
+			<li class="famous-witness-event">Famous Witness</li>
+		</ul>
+		<div id="tabs">
+		</div>
+		<div id="event-info"></div>
+	</body>
+</html>
